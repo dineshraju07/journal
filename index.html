@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Animal detection journal</title>
+</head>
+
+<body>
+  <center>
+    <h2>MACHIHNE LEARNING BASED ANIMAL DETECTION USING IOT</h2>
+    <p>Kalaiyarasi,Kavi priyan,sai dinesh,raj kamal,rohit sharan</p>
+    <p>Associate professor,dept of ECE,Panimalar enigineering college,Anna university,Chennai,Tamil Nadu.</p>
+    <p>UG students,dept.of ECE,Panimalar engineering college,Anna university,Chennai,Tamil Nadu.</p>
+  </center>
+  <p><strong>ABSTRACT:</strong><br>
+    Efficient and reliable monitoring of wild animals in their natural habitat is essential. This project develops a deep learning algorithm to detect the animals in wild life. Since the detection of availability of different animals manually can be
+    a difficult task. This algorithm can detect animals based on their images so we can monitor them more efficiently and take further actions. Animal detection and classification can help to prevent animal-vehicle accidents, trace animals and
+    prevent theft. This can be achieved by applying effective deep learning algorithms and Arduino microcontroller in order to give message alert for the availability of animals using gsm module.
+  </p>
+  <center><strong>
+      I.INTRODUCTION
+    </strong></center>
+  <p><strong>GENERAL:</strong><br>
+    The term digital image refers to processing of a two dimensional picture by a digital computer. In a broader context, it implies digital processing of any two dimensional data. A digital image is an array of real or complex numbers represented by
+    a finite number of bits. An image given in the form of a transparency, slide, photograph or an X-ray is first digitized and stored as a matrix of binary digits in computer memory. This digitized image can then be processed and/or displayed on a
+    high-resolution television monitor. For display, the image is stored in a rapid-access buffer memory, which refreshes the monitor at a rate of 25 frames per second to produce a visually continuous display.
+  </p>
+  <p><strong> THE IMAGE PROCESSING SYSTEM:</strong><br>
+    <center>
+      <img src="imageprocessingsystem.png" alt="the image processing system">
+    </center>
+  </p>
+  <p>
+    <<strong>DIGITIZER:</strong><br>
+      A digitizer converts an image into a numerical representation suitable for input into a digital computer. Some common digitizers are <br>
+      1. Microdensitometer <br>
+      2. Flying spot scanner <br>
+      3. Image dissector <br>
+      4. Videocon camera <br>
+      5. Photosensitive solid- state arrays. <br>
+  </p>
+  <p><strong>IMAGE PROCESSOR:</strong><br>
+    An image processor does the functions of image acquisition, storage, preprocessing, segmentation, representation, recognition and interpretation and finally displays or records the resulting image. The following block diagram gives the
+    fundamental sequence involved in an image processing system.
+    <center>
+      <img src="imageprocessor.png" alt="image processor">
+    </center>
+
+    As detailed in the diagram, the first step in the process is image acquisition by an imaging sensor in conjunction with a digitizer to digitize the image. The next step is the preprocessing step where the image is improved being fed as an input
+    to the other processes. Preprocessing typically deals with enhancing, removing noise, isolating regions, etc. Segmentation partitions an image into its constituent parts or objects. The output of segmentation is usually raw pixel data, which
+    consists of either the boundary of the region or the pixels in the region themselves. Representation is the process of transforming the raw pixel data into a form useful for subsequent processing by the computer. Description deals with extracting
+    features that are basic in differentiating one class of objects from another. Recognition assigns a label to an object based on the information provided by its descriptors. Interpretation involves assigning meaning to an ensemble of recognized
+    objects. The knowledge about a problem domain is incorporated into the knowledge base. The knowledge base guides the operation of each processing module and also controls the interaction between the modules. Not all modules need be necessarily
+    present for a specific function. The composition of the image processing system depends on its application. The frame rate of the image processor is normally around 25 frames per second.
+  </p>
+  <p><strong>DIGITAL COMPUTER:</strong><br>
+    Mathematical processing of the digitized image such as convolution, averaging, addition, subtraction, etc. are done by the computer.
+  </p>
+  <p><strong>MASS STORAGE:</strong><br>
+    The secondary storage devices normally used are floppy disks, CD ROMs etc.
+  </p>
+  <p><strong>HARD COPY DEVICE:</strong><br>
+    The hard copy device is used to produce a permanent copy of the image and for the storage of the software involved.
+  </p>
+  <p><strong>OPERATOR CONSOLE:</strong><br>
+    The operator console consists of equipment and arrangements for verification of intermediate results and for alterations in the software as and when require. The operator is also capable of checking for any resulting errors and for the entry of
+    requisite data.
+  </p>
+  <center>
+    <strong>II.LITERATURE SURVEY</strong>
+  </center>
+  <p><strong>1.Unmanned Aerial Vehicles (UAVs) for Surveying Marine Fauna: A Dugong Case Study Amanda Hodgson1*, Natalie Kelly2,3, David Peel2,3.</strong><br>
+    In this paper, We conducted seven flights of the ScanEagle UAV, mounted with a digital SLR camera payload. During each flight, ten transects covering a 1.3 km2 area frequently used by dugongs, were flown at 500, 750 and 1000 ft. Image
+    (photograph) capture was controlled via the Ground Control Station and the capture rate was scheduled to achieve a prescribed 10% overlap between images along transect lines. Images were manually reviewed post hoc for animals and scored according
+    to sun glitter, Beaufort Sea state and turbidity. <br>
+    <strong>2. Spotting East African Mammals in Open Savannah from Space Zheng Yang1,2, Tiejun Wang1*, Andrew K. Skidmore1, Jan de Leeuw3, Mohammed Y. Said3, Jim Freer.<br></strong>
+    This paper explores the possibility of detecting large animals in the open savannah of Maasai Mara National Reserve, Kenya from very high-resolution GeoEye-1 satellite images. A hybrid image classification method was employed for this specific
+    purpose by incorporating the advantages of both pixel-based and object-based image classification approaches. This was performed in two steps: firstly, a pixel-based image classification method, i.e., artificial neural network was applied to
+    classify potential targets with similar spectral reflectance at pixel level; and then an object-based image classification method was used to further differentiate animal targets from the surrounding landscapes through the applications of expert
+    knowledge.<br>
+    <strong>3. Are unmanned aircraft systems (UASs) the future of wildlife monitoring? A review of accomplishments and challenges Julie LINCHANT* University of Liege, Gembloux Agro-Bio Tech., Forest Resources Management, Laboratory of Tropical &
+      Subtropical Forestry, Passage des Déportés, Gembloux 2.B-5030,<br></strong>
+    This research We reviewed studies in which wildlife populations were monitored by using drones, described accomplishments to date and evaluated the range of possibilities UASs offer to provide new perspectives in future research. 3. We focused on
+    four main topics: 1) the available systems and sensors; 2) the types of survey plan and detection possibilities; 3) contributions towards antipoaching surveillance; and 4) legislation and ethics.<br>
+    <strong>4. Drones count wildlife more accurately and precisely than humans Jarrod C. Hodgson1 | Rowan Mott2 | Shane M. Baylis2 | Trung T. Pham3 <br></strong>
+    Knowing how many individuals are in a wildlife population allows informed management decisions to be made. Ecologists are increasingly using technologies, such as remotely piloted aircraft (RPA; commonly known as “drones,” unmanned aerial systems
+    or unmanned aerial vehicles), for wildlife monitoring applications. Although RPA are widely touted as a cost-effective way to collect high-quality wildlife population data, the validity of these claims is unclear.<br>
+  </p>
+  <center>
+    <strong>
+      III.RESULT
+    </strong>
+  </center>
+  <p>1.If animals detected by the camera it indicates animal detected.<br>
+    <center>
+      <img src="animal.png" alt="animal">
+    </center>
+    2.If animal not detected by the camera it indicates no animal detected.<br>
+    <center>
+      <img src="noanimal.png" alt="no animal">
+    </center>
+  </p>
+  <center>
+    <strong> IV.CONCLUSION</strong>
+  </center>
+  <p>
+    In this article, an optimized automated computer-based method is proposed and validated for smart animal detection system based on image processing and aurduino micro controller. The performance of the proposed method is further optimized by
+    convolutional neural network. Then, the segmented images are classified by the CNN algorithm. The proposed algorithm gives better result with CNN algorithm. Finally, the availability information of animals can be sent through by gsm module using
+    aurduino microcontroller.
+  </p>
+  <center>
+    <strong>                                                          V.REFERENCES</strong>
+    </center>
+    <p>[1] A. Hodgson, N. Kelly, and D. Peel, “Unmanned aerial vehicles (UAVs) for surveying marine fauna: A dugong case study,” PloS One, vol. 8, no. 11, 2013, Art. no. e79556. <br>
+      [2] Z. Yang, T. Wang, A. K. Skidmore, J. D. Leeuw, M. Y. Said, and J. Freer, “Spotting east African mammals in open savannah from space,” PloS One, vol. 9, no. 12, 2014, Art. no. e115989.<br>
+      [3] P. Bayliss and K. M. Yeomans, “Distribution and abundance of feral livestock in the ’Top End’ of the northern territory (1985-86), and their relation to population control,” Wildlife Res., vol. 16, no. 6, pp. 651–676, 1989.<br>
+
+ [4] M. Norton-Griffiths, “Counting animals,” in Serengeti Ecological Monitoring Programme, no. 1. Nairobi, Kenya: African Wildlife Leadership Foundation, 1978.
+<br>
+ [5] J. Linchant, J. Lisein, J. Semeki, P. Lejeune, and C. Vermeulen, “Are unmanned aircraft systems (UASs) the future of wildlife monitoring? A review of accomplishments and challenges,” Mammal Rev., vol. 45, no. 4, pp. 239–252, Oct. 2015.
+
+
+    </p>
+
+
+</body>
+
+</html>
